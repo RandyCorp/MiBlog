@@ -1,0 +1,3 @@
+## Blog personal en wordpress
+
+Blog de pruebas creado desde cero, incluyendo el tema de wordpress...
