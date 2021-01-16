@@ -1,0 +1,100 @@
+aside {
+	.widget {
+		margin-bottom: 2.5em;
+
+		&.redes-sociales {
+			overflow: hidden;
+
+			a {
+				float: left;
+				width: 25%;
+				padding: 1.25em;
+				text-align: center;
+				background-color: black;
+				color: white;
+				&:hover {
+					text-decoration: none;
+
+					&.telegram {
+						background-color: rgba($color: #0088cc, $alpha: 0.8);
+					}
+
+					&.youtube {
+						background-color: rgba($color: #ff0000, $alpha: 0.8);
+					}
+
+					&.facebook {
+						background-color: rgba($color: #3b5998, $alpha: 0.8);
+					}
+
+					&.twitter {
+						background-color: rgba($color: #1da1f2, $alpha: 0.8);
+					}
+				}
+
+				&.telegram {
+					background-color: #0088cc;
+				}
+
+				&.youtube {
+					background-color: #ff0000;
+				}
+
+				&.facebook {
+					background-color: #3b5998;
+				}
+
+				&.twitter {
+					background-color: #1da1f2;
+				}
+
+				.icono {
+					width: 100%;
+					font-size: 1.875em;
+					margin-bottom: 0.5em;
+				}
+			}
+		}
+
+		.contenedor-ad {
+			text-align: center;
+			display: inline-block;
+		}
+
+		/* &.boletin {
+			.formulario {
+				background-color: #0e2b37;
+				padding: 1.25em;
+				text-align: center;
+
+				label {
+					color: white;
+					margin-bottom: 1.25em;
+					display: block;
+				}
+
+				input[type="email"] {
+					color: $gris_claro;
+					text-align: center;
+					padding: 0.65em;
+					font-size: 1.125em;
+					border-radius: 3px;
+					width: 100%;
+					border: none;
+					margin-bottom: 1.25em;
+				}
+
+				input[type="submit"] {
+					background-color: $verde;
+					border-radius: 3px;
+					padding: 0.625em 1.875em;
+					border: none;
+					color: white;
+					&:hover {
+						background-color: rgba($verde, $alpha: 0.8);
+					}
+				}
+			}
+		} */
+	}
+}

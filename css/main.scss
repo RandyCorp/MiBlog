@@ -1,0 +1,178 @@
+.main,
+aside {
+	.titulo-seccion {
+		h3 {
+			font-family: $font-family-2;
+			font-size: 1.5em;
+			line-height: 1.5em;
+			font-weight: normal;
+			color: $gris_oscuro;
+			padding-bottom: 0.62em;
+			border-bottom: 4px solid $verde;
+			margin-bottom: 1.25em;
+		}
+	}
+}
+
+.main {
+	> div {
+		padding: 0;
+	}
+
+	.posts,
+	.single-post {
+		.post {
+			margin-bottom: 1.875em;
+
+			.contenedor {
+				background-color: #fff;
+				box-shadow: 0px 0px 5px 0px rgba($color: #000000, $alpha: 0.3);
+
+				.texto {
+					//Para que el texto no se desborde de la tarjeta
+					word-wrap: break-word;
+					//
+					img {
+						max-width: 100%;
+						vertical-align: top;
+						margin: 0.625px 0;
+					}
+				}
+
+				.thumb {
+					img {
+						width: 100%;
+						vertical-align: top;
+						height: auto;
+					}
+				}
+
+				.info {
+					padding: 1.25em;
+					word-wrap: break-word;
+
+					.titulo {
+						line-height: 1.125em;
+						margin-bottom: 1.25em;
+						margin-top: 0;
+						font-size: 1.125em;
+						font-weight: bold;
+						height: auto;
+						max-height: 3em;
+
+						a {
+							color: $gris_oscuro;
+						}
+					}
+
+					.fecha {
+						color: $gris_claro;
+						font-size: 0.875em;
+						margin-bottom: 1.25em;
+					}
+
+					.extracto {
+						color: $texto;
+						font-size: 1em;
+						height: 8.125em;
+						max-height: 8.125em;
+						line-height: 1.75em;
+						margin-bottom: 1.25em;
+						overflow: hidden;
+						&:hover {
+							overflow: auto;
+						}
+					}
+
+					.categorias {
+						ul {
+							list-style: none;
+
+							li {
+								display: inline-block;
+							}
+						}
+
+						a {
+							color: $gris_claro;
+							font-size: 1em;
+							font-weight: bold;
+							margin-right: 1.25em;
+							&:hover {
+								color: $azul_primario;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.paginacion {
+		> div {
+			display: flex;
+			justify-content: center;
+		}
+
+		ul {
+			list-style: none;
+			overflow: hidden;
+			font-size: 1em;
+			margin-bottom: 1.25em;
+
+			li {
+				float: left;
+				background-color: $gris_oscuro;
+				color: white;
+				margin-right: 0.62em;
+				line-height: 1.125em;
+				font-size: 1.125em;
+				&.disabled {
+					padding: 0.62em 0.937em;
+					line-height: 1.125em;
+					font-size: 1.125em;
+				}
+
+				a {
+					background-color: $azul_primario;
+					color: white;
+					line-height: 1.125em;
+					display: inline-block;
+					padding: 0.62em 0.937em;
+					&:hover {
+						text-decoration: none;
+						background-color: $azul_secundario;
+					}
+				}
+			}
+		}
+	}
+
+	// Estilos para plugin de wordpress WP-PageNavi
+	.wp-pagenavi {
+		margin-bottom: 1.25em;
+		.pages,
+		span {
+			background-color: $gris_oscuro;
+			color: white;
+			margin-right: 0.62em;
+			font-size: 1.125em;
+			line-height: 1.125em;
+			padding: 0.62em 0.937em;
+		}
+
+		a {
+			background-color: $azul_primario;
+			color: white;
+			font-size: 1.125em;
+			display: inline-block;
+			padding: 0.62em 0.937em;
+			margin-right: 0.62em;
+			&:hover {
+				background-color: $azul_secundario;
+				text-decoration: none;
+			}
+		}
+	}
+}

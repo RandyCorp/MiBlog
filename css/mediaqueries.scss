@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px) {
+	header {
+		.logo {
+			text-align: center;
+		}
+
+		.redes-sociales {
+			display: none;
+		}
+	}
+
+	.main {
+		.posts {
+			.post {
+				.contenedor {
+					.info {
+						.titulo {
+							height: auto;
+						}
+						.extracto {
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+
+		.paginacion {
+			li {
+				margin-bottom: 0.62em;
+			}
+		}
+	}
+}
+
+.wp-pagenavi {
+	margin-bottom: 1.25em;
+	.pages,
+	span {
+		background-color: gris_oscuro;
+		color: white;
+		margin-right: 0.62em;
+		font-size: 1.125em;
+		line-height: 1.125em;
+		padding: 0.62em 0.937em;
+	}
+
+	a {
+		background-color: azul_primario;
+		color: white;
+		font-size: 1.125em;
+		display: inline-block;
+		padding: 0.62em 0.937em;
+		margin-right: 0.62em;
+		&:hover {
+			background-color: azul_secundario;
+			text-decoration: none;
+		}
+	}
+}
+
+.wp-pagenavi {
+	margin-bottom: 1.25em;
+
+	.pages,
+	span {
+		background-color: #3b3b3b;
+		color: white;
+		margin-right: 0.62em;
+		font-size: 1.125em;
+		line-height: 1.125em;
+		padding: 0.62em 0.937em;
+	}
+
+	a {
+		background-color: #5f6ad4;
+		color: white;
+		font-size: 1.125em;
+		display: inline-block;
+		padding: 0.62em 0.937em;
+		margin-right: 0.62em;
+		&:hover {
+			background-color: #7780da;
+			text-decoration: none;
+		}
+	}
+}
